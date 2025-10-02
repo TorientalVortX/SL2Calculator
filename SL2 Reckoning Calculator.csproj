@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\chris\Downloads\SL2 Reckoning Calculator updated.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{228C8505-F640-405E-BE19-17363E5AD74C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>SL2 Reckoning Calculator</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>SL2_Reckoning_Calculator</RootNamespace>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AstrologyWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DamageWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DRDebug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DescForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReductionWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StampWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WeaponCalculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PointInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AstrologyWindow.resx" />
+    <EmbeddedResource Include="DamageWindow.resx" />
+    <EmbeddedResource Include="DescForm.resx" />
+    <EmbeddedResource Include="DRDebug.resx" />
+    <EmbeddedResource Include="MainWindow.resx" />
+    <EmbeddedResource Include="PointInput.resx" />
+    <EmbeddedResource Include="PrintWindow.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <EmbeddedResource Include="ReductionWindow.resx" />
+    <EmbeddedResource Include="StampWindow.resx" />
+    <EmbeddedResource Include="WeaponCalculator.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
